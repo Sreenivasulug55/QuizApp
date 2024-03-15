@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Quiz App</h1>
+        <div id="start-screen">
+            <p>Press the button below to start the quiz!</p>
+            <button id="start-btn" class="btn">Start Quiz</button>
+        </div>
+        <div id="quiz-section" style="display: none;">
+            <div id="question"></div>
+            <div id="options"></div>
+            <div id="timer">Time Left: <span id="time">60</span> seconds</div>
+            <button id="exit-btn" class="btn" onclick="exitQuiz()">Exit</button>
+        </div>
+        <div id="result-section" style="display: none;">
+            <h2>Quiz Completed!</h2>
+            <div id="score"></div>
+            <button id="restart-btn" class="btn" onclick="restartQuiz()">Restart Quiz</button>
+        </div>
+    </div>
+  
+    <script src="script.js"></script>
+</body>
+</html>
